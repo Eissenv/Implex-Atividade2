@@ -40,24 +40,27 @@ Siga as instruções abaixo para configurar o ambiente virtual `generateGraphics
 No terminal, dentro do diretório do projeto, execute o comando correspondente ao seu sistema operacional para criar o ambiente virtual:
 
 - **Linux**:
+  ```bash
   python3 -m venv generateGraphics
 ### Ativar o Ambiente virtual
  source generateGraphics/bin/activate
 
 - **Windows**:
+  ```bash
   python -m venv generateGraphics
 ### Ativar o Ambiente virtual
-./generateGraphics\Scripts\activate
+
+    ```bash./generateGraphics\Scripts\activate
 
 ## Dependências
 
 Para instalar as dependências, você deve estar dentro do ambiente virtual, logo após, insira o seguinte comando:
-
+```bash
 pip install matplotlib
 
 ### Desativar o Ambiente Virtual
 
 Quando terminar de usar o ambiente virtual, desative-o para retornar ao ambiente global do sistema:
-
+```bash
 deactivate
 
