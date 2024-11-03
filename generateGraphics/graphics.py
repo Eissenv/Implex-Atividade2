@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 
 # Carregar dados do arquivo de resultados
 data = []
-with open('generateGraphics/results/resultados.txt', 'r') as f:
+with open('results/resultados.txt', 'r') as f:
 
 
 
@@ -29,7 +29,7 @@ plt.title('Programação Dinâmica vs. Guloso (Valor de Venda)', fontsize=14)
 plt.legend()
 plt.grid(True)
 plt.tight_layout()
-plt.savefig('generateGraphics/image/valor_total_venda.png')  # Salvar o gráfico em um arquivo
+plt.savefig('image/valor_total_venda.png')  # Salvar o gráfico em um arquivo
 
 # Gráfico de Tempo de Execução
 plt.figure(figsize=(10, 5))
@@ -41,6 +41,6 @@ plt.title('Programação Dinâmica vs. Guloso (Tempo de Execução)', fontsize=1
 plt.legend()
 plt.grid(True)
 plt.tight_layout()
-plt.savefig('generateGraphics/image/tempo_execucao.png')  # Salvar o gráfico em um arquivo
+plt.savefig('image/tempo_execucao.png')  # Salvar o gráfico em um arquivo
 
 plt.show()  # Mostrar os gráficos
