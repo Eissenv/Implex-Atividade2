@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include "cut_log.h"
+
+
 
 void swap(int *a, int *b) {
     int temp = *a;
@@ -85,7 +88,7 @@ void generate_prices(int prices[], int n) {
 
 // Função para executar os experimentos e salvar os resultados em um arquivo
 void run_experiments(int inc, int fim, int stp) {
-    FILE *outfile = fopen("generateGraphics\\results\\resultados.txt", "w");
+    FILE *outfile = fopen("results\\resultados.txt", "w");
 
     if (outfile == NULL) {
         printf("Erro ao abrir o arquivo!\n");
@@ -125,10 +128,4 @@ void run_experiments(int inc, int fim, int stp) {
     }
 
     fclose(outfile);
-}
-
-int main() {
-    int inc = 1000, fim = 20000, stp = 1000;
-    run_experiments(inc, fim, stp);
-    return 0;
 }
