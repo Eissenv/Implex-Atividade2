@@ -48,19 +48,18 @@ No terminal, dentro do diretório do projeto, execute o comando correspondente a
 - **Windows**:
   ```bash
   python -m venv generateGraphics
-### Ativar o Ambiente virtual
-
-    ```bash./generateGraphics\Scripts\activate
+### Ativar o Ambiente virtual 
+    ./generateGraphics\Scripts\activate
 
 ## Dependências
 
 Para instalar as dependências, você deve estar dentro do ambiente virtual, logo após, insira o seguinte comando:
-```bash
+
 pip install matplotlib
 
 ### Desativar o Ambiente Virtual
 
 Quando terminar de usar o ambiente virtual, desative-o para retornar ao ambiente global do sistema:
-```bash
+
 deactivate
 
